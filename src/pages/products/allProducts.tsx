@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import AllProducts from "@components/products/AllProducts";
 
 const fetchAPI = async () => {
-    const res = await fetch(`http://localhost:3000/api/products/allProducts`)
+    const res = await fetch(`https://tienda-online-kappa.vercel.app/api/products/allProducts`)
     const { data } = await res.json();
 
     return data;

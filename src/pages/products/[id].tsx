@@ -24,7 +24,7 @@ const { URL } = process.env;
 // }
 
 const FetchAPI = async ({id} : any) => {
-    const response = await fetch(URL + `/api/products/${id}`)
+    const response = await fetch(`https://tienda-online-kappa.vercel.app/api/products/${id}`)
     const product = await response.json();
 
     return { props: { product } }

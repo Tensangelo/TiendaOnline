@@ -41,7 +41,7 @@ const Header = () => {
                     </label>
                 </div>
                 <div className={`${Style.navLinks} navLinks`}>
-                    <Link href='/products'>
+                    <Link href='/products/allProducts'>
                         <a>
                             <picture>
                                 <Image
@@ -53,7 +53,7 @@ const Header = () => {
                             Products
                         </a>
                     </Link>
-                    <Link href='/products'>
+                    <Link href='/products/allProducts'>
                         <a>
                             <picture>
                                 <Image
@@ -65,7 +65,7 @@ const Header = () => {
                             Categories
                         </a>
                     </Link>
-                    <Link href='/products'>
+                    <Link href='/products/allProducts'>
                         <a>
                             <picture>
                                 <Image
@@ -77,7 +77,7 @@ const Header = () => {
                             Price List
                         </a>
                     </Link>
-                    <Link href='/products'>
+                    <Link href='/products/allProducts'>
                         <a>
                             <picture>
                                 <Image
