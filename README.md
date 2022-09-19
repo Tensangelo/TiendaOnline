@@ -12,7 +12,7 @@
 Next.js me permite realizar deploy de mis proyectos al instante para presentaciones.
 El uso de typescript y sass lo realizo para mayor comodidad y mejorar mi experiencia con typescript ya que considero que es un lenguaje muy bueno y con gran potencial.
 
-## Tecnologies
+## Technologies
 
 1. Next.js:
 [Next.js Documentation](https://nextjs.org/docs)
