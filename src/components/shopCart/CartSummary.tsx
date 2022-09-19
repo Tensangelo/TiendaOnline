@@ -10,12 +10,13 @@ type CartSummaryProps = {
 
 const CartSummary = ({ totalAmount, totalCount }: CartSummaryProps) => {
 
+    const SubTotalPaymentCOP = totalCount * totalAmount;
     const Money = new Intl.NumberFormat('es-CO', {
         style: 'currency',
         currency: 'COP'
     });
 
-    const totalAmountCOP = Money.format(totalAmount);
+    const totalAmountCOP = Money.format(SubTotalPaymentCOP);
 
     let SerialPayment = Math.random().toString(36).substring(0, 9);
 
