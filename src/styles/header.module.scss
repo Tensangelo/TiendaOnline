@@ -1,0 +1,141 @@
+.containerNav {
+    height: 7rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .navHeader {
+        display: inline-flex;
+
+        .navTitle {
+            display: inline-flex;
+            align-items: center;
+            font-size: 3rem;
+            color: #534D4D;
+            padding: 1rem;
+            font-weight: bold;
+
+            picture {
+                display: flex;
+                position: relative;
+                width: 5rem;
+                height: 5rem;
+                margin-right: 1rem;
+            }
+
+            p {
+                color: #30ffe2;
+            }
+        }
+    }
+
+    .navBtn {
+        display: none;
+    }
+
+    .navLinks {
+        display: inline-flex;
+        align-items: center;
+        height: 100%;
+
+        a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1.3rem 1rem;
+            color: #534D4D;
+            font-weight: 500;
+            font-size: 2rem;
+            width: 16rem;
+            height: 100%;
+
+            picture {
+                display: flex;
+                position: relative;
+                width: 3rem;
+                height: 3rem;
+                margin-right: 1rem;
+            }
+
+            &:hover {
+                background-color: #30ffe2;
+            }
+        }
+
+        .shoppingCart {
+            width: max-content;
+            height: 4rem;
+            padding: 1rem 2rem;
+            background-color: #30ffe2;
+            border-radius: .8rem;
+            transition: all 1s ease;
+            margin-left: 1rem;
+        }
+    }
+
+    @media (max-width: 375px) {
+        justify-content: space-between;
+    }
+
+    @media (max-width: 1024px) {
+        .navBtn {
+            display: inline-flex;
+            height: 7rem;
+            position: fixed;
+            right: 0px;
+            top: 0px;
+            z-index: 2;
+
+            label {
+                display: inline-block;
+                width: 6rem;
+                height: 100%;
+                padding: 2.6rem 1rem 1rem 1.6rem;
+                z-index: 2;
+
+                span {
+                    display: block;
+                    width: 25px;
+                    height: 10px;
+                    border-top: 3px solid #474a59;
+                    transform: rotate(0);
+                    transition: all 0.4s ease;
+                }
+            }
+        }
+
+        .navLinks {
+            position: fixed;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-flow: column wrap;
+            background-color: #474a59;
+            width: 0;
+            height: 100vh;
+            transition: all 0.3s ease-in;
+            overflow-y: hidden;
+            top: 0rem;
+            right: 0;
+            z-index: 1;
+            padding-top: 8rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+            a {
+                display: flex;
+                justify-content: flex-start;
+                width: 100%;
+                color: #ffffff;
+                height: auto;
+            }
+
+            .shoppingCart {
+                color: #000000;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
