@@ -1,34 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Table of Contents
+1. [General Info](#general-info)
+2. [Technologies](#technologies)
+3. [Installation](#installation)
 
-## Getting Started
+# General Info
 
-First, run the development server:
+<p>
+    Principalmente la pagina esta enfocada en demostrar las hailidades para crear y consumir API´s, diseño de paginas web en responsive y resolucion de problemas.
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Next.js me permite realizar deploy de mis proyectos al instante para presentaciones.
+El uso de typescript y sass lo realizo para mayor comodidad y mejorar mi experiencia con typescript ya que considero que es un lenguaje muy bueno y con gran potencial.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologies
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. Next.js:
+[Next.js Documentation](https://nextjs.org/docs)
+<p>
+    Libreria de javascript que trabaja a la mano con React.js, facilita la creacion y copilacion de la pagina, mejorando los tiempos de carga, soporte y entrega.
+</p>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+2. React.js:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<p> Libreria de javascript, esta implementada con Next.js </p>
 
-## Learn More
+3. TypeScript
+[TypeScript Documentation](https://www.typescriptlang.org/)
 
-To learn more about Next.js, take a look at the following resources:
+4. Node.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Sass:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<p>Libreria de diseño para css que permite mejorar el orden y distribucion de codigo en las hojas de estilo</p>
+Realizado en archivos .scss para deja rla compatibilidad con css en caso de retornar de diseño y version
 
-## Deploy on Vercel
+5. React Hook From
+[TypeScript Documentation](https://react-hook-form.com/)
+<p>Libreria para creacion de formularios (validacion, tipado, entrega de datos, manipulacion de registros entre otros)</p>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Installation
+Para ejecutar el programa en modo desarrollador luego de instalar las dependencias necesarias con npm i
+
+Para ejecutar el programa es con el comando npm run dev]
+Luego abrir el puerto localhost:3000
+
+<h3> Notas: </h3>
+Mi prioridad fue enfatizar en logica y no tanto en diseño por lo que la interfaz va a cambiar para mejor en un futuro.
+
+Alguno posibles error o bug puede ser al momento de guardar productos en el carrito de compras, el contador no puede reflejarse, sin embargo si guarda los productos.
+
+El despliqgue por Docker no fue realizado, no poseo los conocimientos en esa area.
+
+<h2>
+    Mejoras a futuro
+</h2>
+
+1. Realizar un consumo de API por medio de NEst.js y Qraphql para mejorar el tiempo de consultas y manipulacion de datos
+2. Mejoras de interfaz
+3. Union a base de datos en postgresSql o mongo DB
+

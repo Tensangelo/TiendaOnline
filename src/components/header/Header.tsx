@@ -53,7 +53,7 @@ const Header = () => {
                             Products
                         </a>
                     </Link>
-                    <Link href='/products/allProducts'>
+                    {/* <Link href='/products/allProducts'>
                         <a>
                             <picture>
                                 <Image
@@ -88,7 +88,7 @@ const Header = () => {
                             </picture>
                             About
                         </a>
-                    </Link>
+                    </Link> */}
                     <Link href='/Cart'>
                         <a className={Style.shoppingCart}>
                             <picture>
